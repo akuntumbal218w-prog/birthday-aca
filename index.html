@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday ACAA! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div class="login-container" id="loginContainer">
+        <div class="login-card">
+            <h1 class="login-title">🎂 ACAA's Birthday Website 🎂</h1>
+            <p class="login-subtitle">Enter the secret key to access the celebration!</p>
+            
+            <form class="login-form" id="loginForm">
+                <div class="input-group">
+                    <label for="keyInput">Secret Key:</label>
+                    <input 
+                        type="password" 
+                        id="keyInput" 
+                        class="key-input" 
+                        placeholder="Enter birthday in MMDD format"
+                        maxlength="4"
+                    >
+                    <small class="hint">💡 Hint: ACAA's birthday month and day</small>
+                </div>
+                <button type="submit" class="login-btn">🎉 Unlock Party! 🎉</button>
+            </form>
+            
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+    </div>
+
+    <!-- Birthday Website -->
+    <div class="birthday-container" id="birthdayContainer" style="display: none;">
+        <!-- Background -->
+        <div class="background">
+            <div class="stars"></div>
+        </div>
+
+        <!-- Main Container -->
+        <div class="container">
+            <!-- Balloons -->
+            <div class="balloons">
+                <div class="balloon balloon-1"></div>
+                <div class="balloon balloon-2"></div>
+                <div class="balloon balloon-3"></div>
+                <div class="balloon balloon-4"></div>
+                <div class="balloon balloon-5"></div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content">
+                <div class="logout-btn-container">
+                    <button class="logout-btn" id="logoutBtn">🔒 Logout</button>
+                </div>
+
+                <h1 class="birthday-title">
+                    <span class="letter">H</span>
+                    <span class="letter">a</span>
+                    <span class="letter">p</span>
+                    <span class="letter">p</span>
+                    <span class="letter">y</span>
+                    <span class="letter"></span>
+                    <span class="letter">B</span>
+                    <span class="letter">i</span>
+                    <span class="letter">r</span>
+                    <span class="letter">t</span>
+                    <span class="letter">h</span>
+                    <span class="letter">d</span>
+                    <span class="letter">a</span>
+                    <span class="letter">y</span>
+                </h1>
+                
+                <div class="name">ACAA</div>
+                
+                <!-- Birthday Date Display -->
+                <div class="birthday-date-display">
+                    <div class="date-display">🎂 Birthday: Monday, August 3, 2006</div>
+                    <div class="age-display" id="ageDisplay">Age: 18 years old 🎉</div>
+                    <div class="countdown" id="countdown"></div>
+                </div>
+                
+                <div class="cake">
+                    <div class="cake-body">
+                        <div class="cake-layer"></div>
+                        <div class="cake-layer"></div>
+                        <div class="cake-layer"></div>
+                    </div>
+                    <div class="candles">
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="message">Make a wish and blow out the candles! 🎂✨</p>
+
+                <!-- Confetti Container -->
+                <div class="confetti-container" id="confetti-container"></div>
+
+                <!-- Interactive Button -->
+                <button class="btn" id="celebrateBtn">🎉 Celebrate! 🎉</button>
+            </div>
+
+            <!-- Floating Hearts -->
+            <div class="floating-hearts"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
